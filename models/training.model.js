@@ -3,7 +3,11 @@ const { sequelize } = require('../config/connectDB');
 
 const Training = sequelize.define('Training', {
     Efficiency: {
-        type: DataTypes.FLOAT,
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    ProcTime: {
+        type: DataTypes.STRING,
         allowNull: false
     }
 }, {
